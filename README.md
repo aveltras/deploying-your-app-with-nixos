@@ -1,5 +1,15 @@
 # Deploying your application with NixOS
 
+- [Getting NixOS on a VPS](#getting-nixos-on-a-vps)
+   - [The NixOS Lustrate method](#the-nixos-lustrate-method)
+   - [Alternative ways to get NixOS on your server](#alternative-ways-to-get-nixos-on-your-server)
+- [A simple Haskell web service](#a-simple-haskell-web-service)
+- [Introducing NixOS modules](#introducing-nixos-modules)
+  - [A quick example : MailHog mail catching facility](#a-quick-example-mailhog-mail-catching-facility)
+- [Packaging your app as a NixOS module](#packaging-your-app-as-a-nixos-module)
+- [Deploying with Morph](#deploying-with-morph)
+- [Bonus: Configuring Nginx and Let's encrypt](#bonus-configuring-nginx-and-let-s-encrypt)
+
 We'll see how one can leverage the Nix ecosystem to easily deploy web applications in a declarative and reproducible way.
 We'll demonstrate how to get NixOS running on most servers, even when NixOS is not officially supported by the hosting provider.
 The application we are about to deploy is a simple Haskell app which requires access to a PostgreSQL database and also a Redis instance, as an excuse to demonstrate how to orchestrate the different building blocks of a deployment.
