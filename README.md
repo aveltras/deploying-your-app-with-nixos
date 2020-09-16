@@ -5,10 +5,10 @@
    - [Alternative ways to get NixOS on your server](#alternative-ways-to-get-nixos-on-your-server)
 - [A simple Haskell web service](#a-simple-haskell-web-service)
 - [Introducing NixOS modules](#introducing-nixos-modules)
-  - [A quick example : MailHog mail catching facility](#a-quick-example-mailhog-mail-catching-facility)
+  - [A quick example : MailHog mail catching facility](#a-quick-example--mailhog-mail-catching-facility)
 - [Packaging your app as a NixOS module](#packaging-your-app-as-a-nixos-module)
 - [Deploying with Morph](#deploying-with-morph)
-- [Bonus: Configuring Nginx and Let's encrypt](#bonus-configuring-nginx-and-let-s-encrypt)
+- [Bonus: Configuring Nginx and Let's encrypt](#bonus-configuring-nginx-and-lets-encrypt)
 
 We'll see how one can leverage the Nix ecosystem to easily deploy web applications in a declarative and reproducible way.
 We'll demonstrate how to get NixOS running on most servers, even when NixOS is not officially supported by the hosting provider.
