@@ -517,7 +517,7 @@ Later in this blog post, we'll demonstrate how to package our app to run it on N
 ## Introducing NixOS modules
 
 Now that you have a NixOS installation running, it's time to explain how it works. 
-We'll build on the [previous blog post](/en/blog/setting-up-a-haskell-development-environment-with-nix/) so I won't rehash the basics of Nix here, feel free to take a break and read it first if you haven't done so already and are unfamiliar with Nix.  
+We'll build on the [previous blog post](https://github.com/aveltras/setting-up-a-haskell-development-environment-with-nix) so I won't rehash the basics of Nix here, feel free to take a break and read it first if you haven't done so already and are unfamiliar with Nix.  
 **NixOS modules** are the building blocks from which you assemble your desired system configuration. Everything in NixOS is a module, from your OS configuration files we encountered in the previous section to the available options at [NixOS options](https://nixos.org/nixos/options.html).  
 
 The basic structure of a module is the following:
