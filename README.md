@@ -543,7 +543,7 @@ The first line is optional but it turns out you'll find it in most non trivial N
 This is the way you can access your global machine configuration and other things such as the pkgs of your subscribed channel.
 Those are automatically provided by the NixOS configuration building script, you don't have to pass them around yourself.
 For example, the **config** parameter here is a reference to **the whole configuration as it's being built**, this enables you to configure your module differently based on the configuration of other modules.  
-**Let's know explain what each of the 3 sections is used for:**
+**Let's now explain what each of the 3 sections is used for:**
 * **imports** is a way to include other modules in your configuration. We've already met this with our **configuration.nix** above which is the entry point of our system configuration. There, we imported our **hardware-configuration.nix** which itself imports another NixOS module
 ~~~nix
 # /etc/nixos/configuration.nix
